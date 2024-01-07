@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student_dashboard.StudentDashBoardController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="642.0" prefWidth="1002.0">
+         <children>
+            <ImageView fitHeight="796.0" fitWidth="1300.0" layoutX="-13.0" layoutY="-75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@professionalnew.jpeg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="721.0" prefWidth="310.0" styleClass="round-layout" stylesheets="@background.css">
+               <children>
+                  <ImageView fitHeight="380.0" fitWidth="174.0" layoutX="-246.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@normal%20screen.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="242.0" fitWidth="206.0" layoutX="37.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@dnyanyog-removebg-preview.png" />
+                     </image>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ImageView>
+                  <Label layoutX="19.0" layoutY="38.0" prefHeight="60.0" prefWidth="271.0" text="Dnyanyog Education" textFill="#180202">
+                     <font>
+                        <Font name="Arial Black" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="324.0" prefHeight="37.0" prefWidth="292.0" text="..... Join Us For Bright Your Future ....." textFill="#400808">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="back" layoutX="38.0" layoutY="420.0" mnemonicParsing="false" onAction="#back" prefHeight="39.0" prefWidth="224.0" stylesheets="@../updatepassword/styles.css" text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="round-layout" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="39.0" fitWidth="48.0" layoutX="57.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../updatepassword/backnew.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="logOut" layoutX="38.0" layoutY="514.0" mnemonicParsing="false" onAction="#logOut" prefHeight="39.0" prefWidth="224.0" stylesheets="@../updatepassword/styles.css" text="Log out" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="round-layout" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="46.0" fitWidth="52.0" layoutX="54.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logout-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label alignment="TOP_CENTER" layoutX="446.0" layoutY="94.0" prefHeight="101.0" prefWidth="742.0" text="STUDENT" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="43.0" />
+               </font>
+            </Label>
+            <Separator layoutX="640.0" layoutY="172.0" prefHeight="8.0" prefWidth="354.0" />
+            <Button fx:id="exams" alignment="BOTTOM_CENTER" layoutX="514.0" layoutY="469.0" mnemonicParsing="false" onAction="#exams" prefHeight="102.0" prefWidth="147.0" styleClass="round-layout" stylesheets="@newstyle.css" text="Exam">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="diary" alignment="BOTTOM_CENTER" layoutX="920.0" layoutY="258.0" mnemonicParsing="false" onAction="#diary" prefHeight="102.0" prefWidth="147.0" styleClass="round-layout" stylesheets="@newstyle.css" text="Diary">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="schedule" alignment="BOTTOM_CENTER" layoutX="1021.0" layoutY="480.0" mnemonicParsing="false" onAction="#schedule" prefHeight="102.0" prefWidth="147.0" styleClass="round-layout" stylesheets="@newstyle.css" text="Schedule">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="leave" alignment="BOTTOM_CENTER" layoutX="767.0" layoutY="469.0" mnemonicParsing="false" onAction="#leave" prefHeight="102.0" prefWidth="147.0" styleClass="round-layout" stylesheets="@newstyle.css" text="Leave">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="notification" alignment="BOTTOM_CENTER" layoutX="651.0" layoutY="258.0" mnemonicParsing="false" onAction="#notification" prefHeight="102.0" prefWidth="147.0" styleClass="round-layout" stylesheets="@newstyle.css" text="Notice">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="54.0" fitWidth="71.0" layoutX="1071.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@schedule.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="71.0" layoutX="813.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@leave.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="71.0" layoutX="566.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@exam.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="71.0" layoutX="967.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@library.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="71.0" layoutX="700.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@notification.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="locationToVisit" alignment="TOP_CENTER" layoutX="736.0" layoutY="632.0" onAction="#locationToVisit" prefHeight="46.0" prefWidth="230.0" text="Location To Visit">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

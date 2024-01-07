@@ -1,0 +1,31 @@
+/* styles.css */
+
+/* Create a rounded layout with a gradient background */
+.round-layout {
+    -fx-border-radius: 0 50 50 0; /* Make the layout rounded */
+    -fx-border-color: #888888; /* Border color */
+    -fx-background-color: linear-gradient(to bottom right, #3498db, #f39c12); /* Gradient background */
+    -fx-background-radius: 0 50 50 0; /* Round the background */
+}
+
+/* Add hover effect to the layout */
+//.round-layout:hover {
+//    -fx-background-color: linear-gradient(to bottom right, #ff704d, #80ffbf); /* Different gradient on hover */
+//}
+
+/* Style the button */
+.button {
+    -fx-background-color: #3cb371; /* Medium Sea Green background color */
+    -fx-background-radius: 50; /* Make the button circular */
+    -fx-text-fill: #fff; /* White text color */
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 50; /* Round the button border */
+    -fx-border-width: 0; /* No border */
+    -fx-cursor: hand; /* Show hand cursor on hover */
+}
+
+.button:hover {
+    -fx-background-color: #2e8b57; /* Darker Medium Sea Green background color on hover */
+}
+

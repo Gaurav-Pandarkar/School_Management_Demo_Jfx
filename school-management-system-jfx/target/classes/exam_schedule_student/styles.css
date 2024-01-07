@@ -1,0 +1,14 @@
+/* styles.css */
+.round-layout{
+-fx-border-radius:300;
+-fx-border-color:#D7D7D7;
+}
+.mouse-moved:hover {
+    -fx-background-color: #8e4db4; /* Darker green background color on hover */
+}
+
+ .button{
+ -fx-background-color:#ff3e0d;
+ -fx-background-radius:50;
+ }
+ 
